@@ -1,19 +1,18 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class Rotate : MonoBehaviour {
-
+public class ControlLight : MonoBehaviour {
 	private float last;
 	private bool move = false;
 	private int keep = 1;
 	private int stop = 0;
 	// Use this for initialization
 	void Start () {
-
+		
 	}
 	
 	// Update is called once per frame
-
+	
 	void FixedUpdate(){
 		if (Input.GetKeyDown (KeyCode.C)) {
 			//添加力矩旋转
@@ -28,10 +27,10 @@ public class Rotate : MonoBehaviour {
 				last = Time.time;
 				Debug.Log("begin");
 			}
-	     }
-
-		if (move) {
+		}
 		
+		if (move) {
+			
 			if((Time.time-last)>stop){
 				Debug.Log("stop is okay");
 				if(Mathf.Abs (Time.time -last-stop)<keep){
@@ -47,8 +46,7 @@ public class Rotate : MonoBehaviour {
 					stop = Random.Range(3,10);
 				}
 			}
-
+			
 		}
 	}	
-
 }

@@ -1,41 +1,36 @@
-﻿Shader "Custom/test" {
-	Properties {
-		_Color ("Color", Color) = (1,1,1,1)
-		_MainTex ("Albedo (RGB)", 2D) = "white" {}
-		_Glossiness ("Smoothness", Range(0,1)) = 0.5
-		_Metallic ("Metallic", Range(0,1)) = 0.0
-	}
-	SubShader {
-		Tags { "RenderType"="Opaque" }
-		LOD 200
-		
-		CGPROGRAM
-		// Physically based Standard lighting model, and enable shadows on all light types
-		#pragma surface surf Standard fullforwardshadows
+﻿Shader "Happy/glowforsphere" {
+Properties {
+_Color ("Color", Color) = (1,1,1,1)
+_Cutoff ("Cutoff", Range(0,1))=0.5
+_Power ("Power", Range(0.5, 5.0)) = 3.0
+}
+SubShader {
+Tags { "Queue"="Transparent" }
+LOD 200
 
-		// Use shader model 3.0 target, to get nicer looking lighting
-		#pragma target 3.0
+CGPROGRAM
+#pragma surface surf Lambert alpha
 
-		sampler2D _MainTex;
 
-		struct Input {
-			float2 uv_MainTex;
-		};
+half4 _Color;
+half _Cutoff;
+half _Power;
+float _intensity;
 
-		half _Glossiness;
-		half _Metallic;
-		fixed4 _Color;
+struct Input {
+  float2 uv_MainTex;
+  half3 viewDir;
 
-		void surf (Input IN, inout SurfaceOutputStandard o) {
-			// Albedo comes from a texture tinted by color
-			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
-			o.Albedo = c.rgb;
-			// Metallic and smoothness come from slider variables
-			o.Metallic = _Metallic;
-			o.Smoothness = _Glossiness;
-			o.Alpha = c.a;
-		}
-		ENDCG
-	} 
-	FallBack "Diffuse"
+};
+
+
+void surf (Input IN, inout SurfaceOutput o) {
+   half4 c = _Color;
+   half ndv=saturate(dot(o.Normal,normalize(IN.viewDir)));
+   o.Emission = c.rgb;
+   o.Alpha = c.a*pow ((ndv-_Cutoff)/(2-_Cutoff+0.00001),_Power);
+}
+ENDCG
+}
+FallBack "Diffuse"
 }

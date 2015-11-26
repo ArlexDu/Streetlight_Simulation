@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: bg_glow
+  m_Name: bg_glow_2
   m_Shader: {fileID: 4800000, guid: 96d29d84762bf8b478636997cd1fcfe5, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 1
@@ -157,7 +157,7 @@ Material:
       data:
         first:
           name: _Power
-        second: 1.61000001
+        second: 2.5
     m_Colors:
       data:
         first:
@@ -166,7 +166,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .800000012, g: .764705896, b: .764705896, a: .784313738}
+        second: {r: .713235259, g: .728968382, b: .728968382, a: .784313738}
       data:
         first:
           name: _SpecColor

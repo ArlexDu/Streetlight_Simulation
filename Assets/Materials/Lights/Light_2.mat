@@ -7,10 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Light_2
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: dabc98ae45c744f25bee62850e082c60, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -78,6 +78,20 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Illum
+        second:
+          m_Texture: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _GlowTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -127,6 +141,14 @@ Material:
         first:
           name: _Metallic
         second: 0
+      data:
+        first:
+          name: _GlowStrength
+        second: 1
+      data:
+        first:
+          name: _EmissionLM
+        second: 0
     m_Colors:
       data:
         first:
@@ -136,3 +158,7 @@ Material:
         first:
           name: _Color
         second: {r: .699999988, g: .699999988, b: .699999988, a: 1}
+      data:
+        first:
+          name: _GlowColor
+        second: {r: 1, g: 1, b: 1, a: 1}

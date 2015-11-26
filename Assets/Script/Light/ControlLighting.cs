@@ -55,7 +55,6 @@ public class ControlLighting : MonoBehaviour {
 	private void ChangeColor(){
 		for (int i=0; i<4; i++) {
 			Lighting[i].GetComponent<Light>().color = (Color)Colors[current_color];
-			Lighting[i].GetComponent<Light>().intensity = 0.1f;
 			Debug.Log(transform.FindChild("bg_glow").gameObject.GetComponent<Renderer>());
 			transform.FindChild("bg_glow").gameObject.GetComponent<Renderer>().material.SetColor("_Color",(Color)Colors[current_color]);
 		}

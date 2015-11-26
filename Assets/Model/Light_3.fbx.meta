@@ -1,50 +1,42 @@
 fileFormatVersion: 2
-guid: 51af70ddf63c39e42a317233775ccaef
-timeCreated: 1448547205
+guid: ccb6a27b6509f8343b3dac8d14130e7e
+timeCreated: 1448547556
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: bone
     100002: Camera
-    100004: Camera_Interest
-    100006: Camera_Root
-    100008: eff
-    100010: Face:Actor
-    100012: Face:Face
-    100014: Face:Fit
-    100016: Face:PickPoints
-    100018: //RootNode
-    100020: Light_2
-    100022: Light_2_1
-    100024: Point
-    100026: Point1
-    100028: Point2
-    100030: Point3
-    100032: root
+    100004: Camera_Root
+    100006: eff
+    100008: Face:Actor
+    100010: Face:Face
+    100012: Face:Fit
+    100014: Face:PickPoints
+    100016: Infinite
+    100018: Light3_1
+    100020: Light3_2
+    100022: //RootNode
+    100024: root
     400000: bone
     400002: Camera
-    400004: Camera_Interest
-    400006: Camera_Root
-    400008: eff
-    400010: Face:Actor
-    400012: Face:Face
-    400014: Face:Fit
-    400016: Face:PickPoints
-    400018: //RootNode
-    400020: Light_2
-    400022: Light_2_1
-    400024: Point
-    400026: Point1
-    400028: Point2
-    400030: Point3
-    400032: root
-    4300000: Light_2
-    4300002: Light_2_1
+    400004: Camera_Root
+    400006: eff
+    400008: Face:Actor
+    400010: Face:Face
+    400012: Face:Fit
+    400014: Face:PickPoints
+    400016: Infinite
+    400018: Light3_1
+    400020: Light3_2
+    400022: //RootNode
+    400024: root
+    4300000: Light3_1
+    4300002: Light3_2
     7400000: Take 001
     9500000: //RootNode
-    13700000: Light_2
-    13700002: Light_2_1
+    13700000: Light3_1
+    13700002: Light3_2
   materials:
     importMaterials: 1
     materialName: 0

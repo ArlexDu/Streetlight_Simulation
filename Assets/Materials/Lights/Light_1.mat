@@ -7,13 +7,11 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Light_1
-  m_Shader: {fileID: 4800000, guid: dabc98ae45c744f25bee62850e082c60, type: 3}
-  m_ShaderKeywords: GLOW11_GLOW_GLOWTEX GLOW11_MULTIPLY_GLOWCOLOR _ALPHAPREMULTIPLY_ON
-    _PARALLAXMAP
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: GLOW11_GLOW_GLOWTEX GLOW11_MULTIPLY_GLOWCOLOR _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 5
-  m_CustomRenderQueue: 2000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -21,14 +19,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 1109f1e4c1b5bb341b98f83deadb9fd4, type: 3}
+          m_Texture: {fileID: 2800000, guid: 126e00b8672c29f48bf7b8d6ca1a7caf, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 179fc392e3315814a9cd385c1895264a, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -42,7 +40,7 @@ Material:
         first:
           name: _ParallaxMap
         second:
-          m_Texture: {fileID: 2800000, guid: fdee4e8c32bcae84aa366a316d42b206, type: 3}
+          m_Texture: {fileID: 2800000, guid: 4da7f618992194949b7840a9973eeadf, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -102,7 +100,7 @@ Material:
       data:
         first:
           name: _DstBlend
-        second: 10
+        second: 0
       data:
         first:
           name: _Cutoff
@@ -114,19 +112,19 @@ Material:
       data:
         first:
           name: _Parallax
-        second: .0307
+        second: .0104
       data:
         first:
           name: _ZWrite
-        second: 0
+        second: 1
       data:
         first:
           name: _Glossiness
-        second: .5
+        second: .577000022
       data:
         first:
           name: _BumpScale
-        second: 1
+        second: .5
       data:
         first:
           name: _OcclusionStrength
@@ -142,15 +140,11 @@ Material:
       data:
         first:
           name: _Mode
-        second: 3
+        second: 0
       data:
         first:
           name: _Metallic
         second: 0
-      data:
-        first:
-          name: _InvFade
-        second: .75
       data:
         first:
           name: _GlowStrength
@@ -159,6 +153,10 @@ Material:
         first:
           name: _EmissionLM
         second: 0
+      data:
+        first:
+          name: _InvFade
+        second: .75
     m_Colors:
       data:
         first:
@@ -174,9 +172,9 @@ Material:
         second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
-          name: _TintColor
-        second: {r: 1, g: 1, b: 1, a: .5}
-      data:
-        first:
           name: _GlowColor
         second: {r: .625, g: .629595578, b: .627979219, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 1, b: 1, a: .5}

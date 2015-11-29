@@ -7,10 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Light_2
-  m_Shader: {fileID: 4800000, guid: dabc98ae45c744f25bee62850e082c60, type: 3}
-  m_ShaderKeywords: 
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 5
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -19,14 +19,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 6bc862666e3f8da4f9f3d65109b089a1, type: 3}
+          m_Texture: {fileID: 2800000, guid: 33ea80d96c2fa4c4298e6e61d8683759, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 791fc27fb80556149bd9bd81d4c5bcb1, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -40,7 +40,7 @@ Material:
         first:
           name: _ParallaxMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: b27ce24cf45ab2a4fa3b69571b4cfa9a, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -108,7 +108,7 @@ Material:
       data:
         first:
           name: _Parallax
-        second: .0199999996
+        second: .00499999989
       data:
         first:
           name: _ZWrite
@@ -116,7 +116,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: .5
+        second: .402999997
       data:
         first:
           name: _BumpScale
@@ -140,7 +140,7 @@ Material:
       data:
         first:
           name: _Metallic
-        second: 0
+        second: .219999999
       data:
         first:
           name: _GlowStrength

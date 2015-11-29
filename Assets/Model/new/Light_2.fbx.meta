@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: a6312ac8539e81c45bf17b4dea3c7d45
+timeCreated: 1448805249
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Camera_Interest
+    100004: Camera_Root
+    100006: denglong2_3:bone
+    100008: denglong2_3:Camera
+    100010: denglong2_3:Camera_Interest
+    100012: denglong2_3:Camera_Root
+    100014: denglong2_3:denglong2_3
+    100016: denglong2_3:eff
+    100018: denglong2_3:Face1:Actor
+    100020: denglong2_3:Face1:Face1
+    100022: denglong2_3:Face1:Fit
+    100024: denglong2_3:Face1:PickPoints
+    100026: denglong2_3:Light2_2
+    100028: denglong2_3:Light_2_1
+    100030: denglong2_3:root
+    100032: Face:Actor
+    100034: Face:Face
+    100036: Face:Fit
+    100038: Face:PickPoints
+    100040: light
+    100042: //RootNode
+    100044: Spot
+    100046: Spot1
+    100048: Spot_Interest
+    100050: Spot_Root
+    400000: Camera
+    400002: Camera_Interest
+    400004: Camera_Root
+    400006: denglong2_3:bone
+    400008: denglong2_3:Camera
+    400010: denglong2_3:Camera_Interest
+    400012: denglong2_3:Camera_Root
+    400014: denglong2_3:denglong2_3
+    400016: denglong2_3:eff
+    400018: denglong2_3:Face1:Actor
+    400020: denglong2_3:Face1:Face1
+    400022: denglong2_3:Face1:Fit
+    400024: denglong2_3:Face1:PickPoints
+    400026: denglong2_3:Light2_2
+    400028: denglong2_3:Light_2_1
+    400030: denglong2_3:root
+    400032: Face:Actor
+    400034: Face:Face
+    400036: Face:Fit
+    400038: Face:PickPoints
+    400040: light
+    400042: //RootNode
+    400044: Spot
+    400046: Spot1
+    400048: Spot_Interest
+    400050: Spot_Root
+    4300000: denglong2_3:Light_2_1
+    4300002: denglong2_3:Light2_2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: denglong2_3:Light2_2
+    13700002: denglong2_3:Light_2_1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

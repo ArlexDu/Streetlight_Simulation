@@ -150,6 +150,14 @@ Material:
         second: 0
       data:
         first:
+          name: _GlowStrength
+        second: 1
+      data:
+        first:
+          name: _EmissionLM
+        second: 0
+      data:
+        first:
           name: _RimPower
         second: 3
       data:
@@ -158,12 +166,20 @@ Material:
         second: 1
       data:
         first:
-          name: _GlowStrength
-        second: 1
+          name: _Power
+        second: 3
       data:
         first:
-          name: _EmissionLM
-        second: 0
+          name: _InnerColorPower
+        second: .5
+      data:
+        first:
+          name: _AlphaPower
+        second: 4
+      data:
+        first:
+          name: _AllPower
+        second: 1
     m_Colors:
       data:
         first:
@@ -179,6 +195,10 @@ Material:
         second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
       data:
         first:
+          name: _GlowColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
           name: _ColorTint
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
@@ -187,5 +207,5 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _GlowColor
-        second: {r: 1, g: 1, b: 1, a: 1}
+          name: _InnerColor
+        second: {r: 1, g: 1, b: 1, a: .5}

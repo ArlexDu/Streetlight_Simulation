@@ -26,14 +26,6 @@ public class ControlLighting : MonoBehaviour {
 		} else if (Input.GetKey (KeyCode.DownArrow)) {//点击下箭头光强减少
 			ChangeLightIntensity (-0.05f);
 		}
-	  
-		if (Input.GetKeyDown (KeyCode.RightArrow)) {//更换颜色
-			++current_color;
-			if(current_color>=Colors.Count){
-				current_color=0;
-			}
-			ChangeColor();
-		}
 	}
 
 
@@ -50,13 +42,5 @@ public class ControlLighting : MonoBehaviour {
 		}
 
 	}
-
-	//改变光的颜色
-	private void ChangeColor(){
-		for (int i=0; i<4; i++) {
-			Lighting[i].GetComponent<Light>().color = (Color)Colors[current_color];
-			Debug.Log(transform.FindChild("bg_glow").gameObject.GetComponent<Renderer>());
-			transform.FindChild("bg_glow").gameObject.GetComponent<Renderer>().material.SetColor("_Color",(Color)Colors[current_color]);
-		}
-	}
+	
 }

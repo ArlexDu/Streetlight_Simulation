@@ -12,6 +12,8 @@ private Transform[] lights = new Transform[3];
 			lights[i] = Light.GetChild(i);
 			if(i!=0){
 				lights[i].gameObject.SetActive(false);
+			}else{
+				lights[i].gameObject.SetActive(true);
 			}
 		}
 	}
@@ -23,6 +25,8 @@ private Transform[] lights = new Transform[3];
 			currentlight = (currentlight+1)>2?0:(currentlight+1);
 		//	Debug.Log(lights[currentlight].FindChild("Light").localPosition.y);
 			lights[currentlight].FindChild("Light").localPosition=new Vector3(0,0,0);
+			lights[currentlight].FindChild("Light").localRotation = new Quaternion(0,0,0,0);
+			lights[currentlight].FindChild("fixed").localRotation = new Quaternion(0,0,0,0);
 			Debug.Log(lights[currentlight].FindChild("Light").localPosition.y);
 			lights[currentlight].gameObject.SetActive(true);
 		}

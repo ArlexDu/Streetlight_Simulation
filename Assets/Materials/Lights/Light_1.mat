@@ -7,11 +7,12 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Light_1
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: GLOW11_GLOW_GLOWTEX GLOW11_MULTIPLY_GLOWCOLOR _NORMALMAP _PARALLAXMAP
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_Shader: {fileID: 16, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _NORMALMAP
+  m_LightmapFlags: 1
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    RenderType: Transparent
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -82,13 +83,6 @@ Material:
         first:
           name: _Illum
         second:
-          m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _GlowTex
-        second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
@@ -100,7 +94,7 @@ Material:
       data:
         first:
           name: _DstBlend
-        second: 0
+        second: 10
       data:
         first:
           name: _Cutoff
@@ -108,23 +102,23 @@ Material:
       data:
         first:
           name: _Shininess
-        second: .078125
+        second: .130999997
       data:
         first:
           name: _Parallax
-        second: .0104
+        second: .0148999998
       data:
         first:
           name: _ZWrite
-        second: 1
+        second: 0
       data:
         first:
           name: _Glossiness
-        second: .577000022
+        second: .5
       data:
         first:
           name: _BumpScale
-        second: .5
+        second: 1
       data:
         first:
           name: _OcclusionStrength
@@ -140,23 +134,15 @@ Material:
       data:
         first:
           name: _Mode
-        second: 0
+        second: 3
       data:
         first:
           name: _Metallic
         second: 0
       data:
         first:
-          name: _GlowStrength
-        second: 0
-      data:
-        first:
-          name: _EmissionLM
-        second: 0
-      data:
-        first:
-          name: _InvFade
-        second: .75
+          name: _Emission
+        second: 1.17999995
     m_Colors:
       data:
         first:
@@ -165,16 +151,8 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .699999988, g: .699999988, b: .699999988, a: 1}
       data:
         first:
           name: _SpecColor
         second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _GlowColor
-        second: {r: .625, g: .629595578, b: .627979219, a: 1}
-      data:
-        first:
-          name: _TintColor
-        second: {r: 1, g: 1, b: 1, a: .5}

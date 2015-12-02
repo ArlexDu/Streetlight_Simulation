@@ -108,11 +108,11 @@ Material:
       data:
         first:
           name: _Shininess
-        second: 1
+        second: .00999999978
       data:
         first:
           name: _Parallax
-        second: .00499999989
+        second: .0397000015
       data:
         first:
           name: _ZWrite
@@ -148,7 +148,7 @@ Material:
       data:
         first:
           name: _Emission
-        second: 2.67000008
+        second: 1.45000005
     m_Colors:
       data:
         first:

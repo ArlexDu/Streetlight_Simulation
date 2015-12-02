@@ -20,12 +20,12 @@ public class ControlLight : MonoBehaviour {
 		}
 		if (Input.GetKeyDown (KeyCode.V)) {
 			if(move){
-				Debug.Log("stop");
+				Debug.Log("wind stop");
 				move = false;
 			}else{
 				move = true;
 				last = Time.time;
-				Debug.Log("begin");
+				Debug.Log("wind begin");
 			}
 		}
 		

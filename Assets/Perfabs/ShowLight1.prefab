@@ -829,11 +829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ae7fda37c71b84cb587793dae069b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lighting:
-  - {fileID: 196454}
-  - {fileID: 162712}
-  - {fileID: 135544}
-  - {fileID: 147500}
 --- !u!135 &13513510
 SphereCollider:
   m_ObjectHideFlags: 1

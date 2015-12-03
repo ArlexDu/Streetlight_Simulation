@@ -564,7 +564,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476804}
-  - 114: {fileID: 11470510}
+  - 114: {fileID: 11407300}
   m_Layer: 0
   m_Name: Lighting
   m_TagString: Untagged
@@ -1971,7 +1971,7 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2003,7 +2003,7 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2035,7 +2035,7 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2067,7 +2067,7 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2099,7 +2099,7 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2131,7 +2131,7 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2164,7 +2164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60730a471aa222142abb29002af010ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11470510
+--- !u!114 &11407300
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2172,16 +2172,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 161962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3538632fd0fdd545ba6bf6b0f9adbd9, type: 3}
+  m_Script: {fileID: 11500000, guid: a5ae7fda37c71b84cb587793dae069b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lighting:
-  - {fileID: 182124}
-  - {fileID: 190072}
-  - {fileID: 191992}
-  - {fileID: 131074}
-  - {fileID: 147810}
-  - {fileID: 0}
 --- !u!135 &13529562
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -6,6 +6,7 @@ public class ControlLight : MonoBehaviour {
 	private bool move = false;
 	private int keep = 1;
 	private int stop = 0;
+    private bool turn = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -14,9 +15,10 @@ public class ControlLight : MonoBehaviour {
 	// Update is called once per frame
 	
 	void FixedUpdate(){
-		if (Input.GetKeyDown (KeyCode.C)) {
+		if (turn) {
 			//添加力矩旋转
 			transform.GetComponent<Rigidbody> ().AddTorque (new Vector3 (0, 180, 0));
+            turn = false;
 		}
 		if (Input.GetKeyDown (KeyCode.V)) {
 			if(move){
@@ -48,5 +50,10 @@ public class ControlLight : MonoBehaviour {
 			}
 			
 		}
-	}	
+	}
+    
+    public void changturn()
+    {
+        turn = true;
+    }	
 }

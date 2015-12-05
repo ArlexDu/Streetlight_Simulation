@@ -134,7 +134,7 @@ public class BodySourceView : MonoBehaviour
     {
         for (Kinect.JointType jt = Kinect.JointType.SpineBase; jt <= Kinect.JointType.ThumbRight; jt++)
         {
-            Kinect.Joint Zero = body.Joints[0]; 
+            Kinect.Joint Zero = body.Joints[0];
             Kinect.Joint sourceJoint = body.Joints[jt];
             Kinect.Joint? targetJoint = null;
             
@@ -151,7 +151,12 @@ public class BodySourceView : MonoBehaviour
             {
                 lr.SetPosition(0, (jointObj.localPosition+ZeroObject.position));
                 if (jointObj.name == "HandRight") {
-                       Debug.Log(jointObj.name+" position is "+ jointObj.localPosition);
+                    float oldx = sourceJoint.Position.X - Zero.Position.X;
+                      Debug.Log(jointObj.name+" position is "+oldx);
+                   if(oldx > 0)
+                    {
+                        StartCoroutine(check(oldx,body));
+                    }
                 }
                 lr.SetPosition(1, (GetVector3FromJoint(targetJoint.Value,Zero) + ZeroObject.position));
                 lr.SetColors(GetColorForState (sourceJoint.TrackingState), GetColorForState(targetJoint.Value.TrackingState));
@@ -181,6 +186,17 @@ public class BodySourceView : MonoBehaviour
     //产生相对位置
     private static Vector3 GetVector3FromJoint(Kinect.Joint joint,Kinect.Joint Zero)
     {
-          return new Vector3((joint.Position.X - Zero.Position.X ) * 0.2f, (joint.Position.Y - Zero.Position.Y ) * 0.2f, (joint.Position.Z - Zero.Position.Z ) * 0.2f);
+        return new Vector3((joint.Position.X - Zero.Position.X ) * 0.2f, (joint.Position.Y - Zero.Position.Y ) * 0.2f, (joint.Position.Z - Zero.Position.Z ) * 0.2f);
+    }
+
+    IEnumerator check(float oldx, Kinect.Body body)
+    {
+        yield return new WaitForSeconds(0.5f);
+        Kinect.Joint Zero = body.Joints[Kinect.JointType.SpineBase];
+        Kinect.Joint sourceJoint = body.Joints[Kinect.JointType.HandRight];
+        if((sourceJoint.Position.X - Zero.Position.X) < 0)
+        {
+            GameObject.Find("Light").GetComponent<ControlLight>().changturn();
+        }
     }
 }

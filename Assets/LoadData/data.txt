@@ -1,0 +1,1 @@
+{"Slight1_y":0.1,"Slight2_y":0,"Slight3_y":-0.209,"Slight4_y":-0.257,"Flight1_y":0.0911,"Flight2_y":0.1017,"Flight3_y":0.1578,"Flight4_y":0.21716}

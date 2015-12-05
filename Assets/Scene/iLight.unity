@@ -267,7 +267,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 168594, guid: 3ee76900b2c856c4fb696fc69654053e, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ee76900b2c856c4fb696fc69654053e, type: 2}
@@ -280,6 +280,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 428709965}
+  - 114: {fileID: 428709967}
+  - 114: {fileID: 428709966}
   m_Layer: 0
   m_Name: Lights
   m_TagString: Untagged
@@ -303,6 +305,28 @@ Transform:
   - {fileID: 768270699}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &428709966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 428709964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07468bd06420d0d4e92aef54db70f7a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &428709967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 428709964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16f3093f77f1ea4885e6c8e9a67cb59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &460260734
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,7 +716,6 @@ GameObject:
   - 64: {fileID: 752543441}
   - 23: {fileID: 752543440}
   - 114: {fileID: 752543444}
-  - 114: {fileID: 752543445}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -770,17 +793,6 @@ MonoBehaviour:
   - {fileID: 197952, guid: a92499f2a724dab4f9dc9f59c177d8ae, type: 2}
   - {fileID: 169138, guid: 456f23df81215fa49a338cefa25dce05, type: 2}
   - {fileID: 101492, guid: 3a6d17564ebad1b4b9b1b6a3193d90ab, type: 2}
---- !u!114 &752543445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 752543439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07468bd06420d0d4e92aef54db70f7a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &768270699 stripped
 Transform:
   m_PrefabParentObject: {fileID: 467136, guid: d7319dfd39261534899caefc9da171c9, type: 2}
@@ -1265,7 +1277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1278414688
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1599,7 +1611,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 164054, guid: d832f2d4cc850b64c94b009946549cf9, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d832f2d4cc850b64c94b009946549cf9, type: 2}
@@ -1760,7 +1772,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 108572, guid: d7319dfd39261534899caefc9da171c9, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7319dfd39261534899caefc9da171c9, type: 2}

@@ -8,10 +8,13 @@ public class ChangeLight : MonoBehaviour {
 	private int max;
 	// Use this for initialization
 	void Start () {
-		Transform Light = GameObject.Find ("Lights").transform;
+        JsonManager jsonmanager = JsonManager.instance;
+        Transform Light = GameObject.Find ("Lights").transform;
 		for (int i=0; i<Light.childCount; i++) {
 			lights[i] = Light.GetChild(i);
-			if(i!=0){
+            lights[i].localPosition = new Vector3(0, jsonmanager.getSvalue(i + 1), 0);
+            lights[i].GetChild(0).localPosition = new Vector3(0, jsonmanager.getFvalue(i + 1), 0);
+            if (i!=0){
 				lights[i].gameObject.SetActive(false);
 			}else{
 				lights[i].gameObject.SetActive(true);

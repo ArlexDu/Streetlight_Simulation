@@ -32,12 +32,12 @@ public class ControlLight : MonoBehaviour {
 		if (move) {
 			
 			if((Time.time-last)>stop){
-				Debug.Log("stop is okay");
+	//			Debug.Log("stop is okay");
 				if(Mathf.Abs (Time.time -last-stop)<keep){
 					Debug.Log("move");
 					int strength = Random.Range(0,3)*10;
 					//已经用fixed的joint链接，给一个水平力
-					transform.GetComponent<Rigidbody> ().AddForce (new Vector3 (1, 0, 0) * strength);
+					transform.GetComponent<Rigidbody> ().AddForce (new Vector3 (0, 0, -1) * strength);
 				}else{
 					last  = Time.time;
 					//mo模拟风力的持续时间

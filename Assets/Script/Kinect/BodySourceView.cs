@@ -10,7 +10,7 @@ public class BodySourceView : MonoBehaviour
     public Transform ZeroObject;//设置body的位置 
     private Dictionary<ulong, GameObject> _Bodies = new Dictionary<ulong, GameObject>();
     private BodySourceManager _BodyManager;
-    
+    public GameObject firebones;
     private Dictionary<Kinect.JointType, Kinect.JointType> _BoneMap = new Dictionary<Kinect.JointType, Kinect.JointType>()
     {
         { Kinect.JointType.FootLeft, Kinect.JointType.AnkleLeft },
@@ -115,14 +115,14 @@ public class BodySourceView : MonoBehaviour
         Debug.Log("a new body");
         for (Kinect.JointType jt = Kinect.JointType.SpineBase; jt <= Kinect.JointType.ThumbRight; jt++)
         {
-            GameObject jointObj = GameObject.CreatePrimitive(PrimitiveType.Cube);
-             
+            GameObject jointObj = (GameObject)Instantiate(firebones, body.transform.position, body.transform.rotation);
+
             LineRenderer lr = jointObj.AddComponent<LineRenderer>();
             lr.SetVertexCount(2);
             lr.material = BoneMaterial;
-            lr.SetWidth(0.01f, 0.01f);
+            lr.SetWidth(0.5f, 0.5f);
              
-            jointObj.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+            jointObj.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             jointObj.name = jt.ToString();
             jointObj.transform.parent = body.transform;
         }
@@ -186,7 +186,7 @@ public class BodySourceView : MonoBehaviour
     //产生相对位置
     private static Vector3 GetVector3FromJoint(Kinect.Joint joint,Kinect.Joint Zero)
     {
-        return new Vector3((joint.Position.X - Zero.Position.X ) * 0.2f, (joint.Position.Y - Zero.Position.Y ) * 0.2f, (joint.Position.Z - Zero.Position.Z ) * 0.2f);
+        return new Vector3((joint.Position.X - Zero.Position.X ) * 10f, (joint.Position.Y - Zero.Position.Y ) * 10f, (joint.Position.Z - Zero.Position.Z ) * 10f);
     }
 
     IEnumerator check(float oldx, Kinect.Body body)

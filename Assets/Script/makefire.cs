@@ -11,7 +11,6 @@ public class makefire : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("");
         firebone.transform.position = transform.position;
         firebone.transform.rotation = transform.rotation;
 	}

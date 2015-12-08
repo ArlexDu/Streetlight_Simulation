@@ -196,7 +196,7 @@ public class BodySourceView : MonoBehaviour
         Kinect.Joint sourceJoint = body.Joints[Kinect.JointType.HandRight];
         if((sourceJoint.Position.X - Zero.Position.X) < 0)
         {
-            GameObject.Find("Light").GetComponent<ControlLight>().changturn();
+     //       GameObject.Find("Light").GetComponent<ControlLight>().changturn();
         }
     }
 }
